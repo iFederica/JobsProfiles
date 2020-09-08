@@ -12,4 +12,5 @@ struct PersonData {
     let image: String
     let name: String
     let profession: String
+    let url: URL
 }

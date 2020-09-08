@@ -23,12 +23,10 @@ struct ContentRow: View {
                 Text(data.profession)
             }
             Spacer()
-        }.padding()
-    }
-}
-
-struct ContentRow_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentRow(data: PersonData (image: "1", name: "Sample name", profession: "Sample profession"))
+        }
+        .padding()
+        .onTapGesture {
+            UIApplication.shared.open(self.data.url)
+        }
     }
 }

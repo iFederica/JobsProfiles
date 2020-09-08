@@ -11,8 +11,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-            ContentRow(data: PersonData(image: "1", name: "Federica Gagliotta", profession: "iOS Junior Developer"))
-            ContentRow(data: PersonData(image: "0", name: "Michel Marqués", profession: "iOS Senior Developer"))
+            ContentRow(data: PersonData(
+                image: "1",
+                name: "Federica Gagliotta",
+                profession: "iOS Junior Developer",
+                url: URL(string: "https://www.linkedin.com/in/federica-gagliotta-654626134/")!)
+            )
+            ContentRow(data: PersonData(
+                image: "0",
+                name: "Michel Marqués",
+                profession: "iOS Senior Developer",
+                url: URL(string: "https://www.linkedin.com/in/michelmarques/")!)
+            )
         }
         
     }
