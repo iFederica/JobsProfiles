@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct PersonData {
+struct PersonData: Identifiable {
+    let id = UUID()
     let image: String
     let name: String
     let profession: String
